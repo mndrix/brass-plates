@@ -52,7 +52,11 @@ $g->add_edge(
     label                   => 'Lehi, &co',
     %person_label,
 );
-$g->add_edge( 'Zedekiah to Babylon'      => 'Zedekiah arrives in Babylon' );
+$g->add_edge(
+    'Zedekiah to Babylon' => 'Zedekiah arrives in Babylon',
+    label                 => 'Judah',
+    %person_label,
+);
 $g->add_edge( 'Nephi leaves Laman'       => 'Mosiah leaves Lehi-Nephi' );
 $g->add_edge(
     'Mosiah leaves Lehi-Nephi' => 'Mosiah finds Zarahemla',
