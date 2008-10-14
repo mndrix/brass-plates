@@ -20,7 +20,17 @@ $g->add_edge( 'Babel'    => 'Limhites return to Zarahemla',
     label     => "Jaredite record\n(discovered by Limhites)",
     %person_label,
 );
-$g->add_edge( 'Abraham leaves Egypt' => 'Lehi leaves Jerusalem' );
+$g->add_edge( 'Abraham leaves Egypt' => 'Israel to Assyria' ); # 2 Kgs 17:6
+$g->add_edge(
+    'Israel to Assyria' => 'Israel arrives in Assyria',
+    label               => 'Ten Tribes',
+    %person_label,
+);
+$g->add_edge(
+    'Israel to Assyria' => 'Lehi leaves Jerusalem',
+    label               => 'Jerusalem',
+    %place_label,
+);
 $g->add_edge(
     'Abraham leaves Egypt' => "Book of Abraham\ntranslated",
     label                  => 'Egypt',
