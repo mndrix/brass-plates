@@ -108,6 +108,8 @@ $g->add_edge(
 
 # TODO there are probably more nodes along these edges
 $g->add_edge( "Alma arrives in Zarahemla"   => 'Standard Works' );
+$g->add_edge( 'Zedekiah arrives in Babylon' => "Judah returns\nto Jerusalem" );
+$g->add_edge( "Judah returns\nto Jerusalem" => 'Standard Works' );
 
 $g->add_edge( "Book of Abraham\ntranslated" => 'Standard Works' );
 
