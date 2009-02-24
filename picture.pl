@@ -107,6 +107,7 @@ $g->add_edge(
 
 
 # TODO there are probably more nodes along these edges
+# TODO add Christ dictating the words of Malachi to the Nephites
 $g->add_edge( "Alma arrives in Zarahemla"   => 'Standard Works' );
 $g->add_edge( 'Zedekiah arrives in Babylon' => "Judah returns\nto Jerusalem" );
 $g->add_edge( "Judah returns\nto Jerusalem" => 'Standard Works' );
