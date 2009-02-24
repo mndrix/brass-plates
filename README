@@ -1,0 +1,48 @@
+README for Brass Plates project
+
+INTRODUCTION
+
+The purpose of the Brass Plates project is to determine, as much as
+possible, the exact contents of the Brass Plates mentioned in the Book
+of Mormon.  The technique for determining those contents is a
+combination of textual transmission and scriptural quotes within the
+Book of Mormon.
+
+The Book of Mormon provides detailed descriptions of various groups
+which splintered away from other groups.  Sometimes they brought
+records with them and sometime they didn't.  Oftentimes, these groups
+rejoined at a later date.  Based on these descriptions, we can
+determine approximately how religious texts were transmitted among
+these various groups.
+
+The Book of Mormon often appears to quote from the Bible.  In some
+places, those quote appear to be anachronisms.  Such passages are best
+explained by positing a third, unknown passage which the Bible and
+Book of Mormon are both quoting.
+
+By correlating information about textual transmission and quotation,
+one should be able to triangulate the approximate origin of some
+quotations.  A subset of those origins will provide contents of the
+Brass Plates.
+
+AN EXAMPLE
+
+Run "perl picture.pl" to generate graph.png  This image charts textual
+transmission in portions of the Bible and Book of Mormon.  Then look
+at quotes.ttl for the scriptures related to "grow up as calves of the
+stall".  Pin point each of those verses along an edge of the
+transmission graph.  Trace upward along those edges until you find the
+most recent, common ancestor.  In this case, the node is labeled "Lehi
+leaves Jerusalem".  Based on this textual ancestry, we know that the
+phrase "grow up as calves of the stall" originated sometime before
+Lehi left Jerusalem.  Because of the edges we traced, we can also
+infer that that passage was included in the Brass Plates.
+
+COPYRIGHT AND LICENSE
+
+Copyright (C) 2009 Michael Hendricks <michael@ndrix.org>
+
+The data portions of this work are licensed under a Creative Commons
+Attribution 3.0 United States License
+(http://creativecommons.org/licenses/by/3.0/us/).  The software portions are
+licensed under the MIT License.
