@@ -1,0 +1,19 @@
+# a namespace for referencing particular passages of scripture
+# as QNames.  These URLs redirect to scriptures.lds.org to provide
+# the content of the scripture passage.  Unfortunately, the
+# native URI scheme of that site can't be specified with QNames
+# because they contain '/' characters.
+@prefix sc: <http://scriptures.ndrix.org/> .
+
+# a namespace for describing relationships related to study of the 
+# Brass Plates
+@prefix bp: <http://plates.ndrix.org/ns/> .
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.22.24,
+        sc:en.3_ne.25.2,
+        sc:en.mal.4.2;
+    bp:text
+        "grow up as calves of the stall"
+.
