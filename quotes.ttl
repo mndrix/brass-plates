@@ -66,6 +66,7 @@
 []
     bp:quoted_in
         sc:en.john.1.26-27,
+        sc:en.luke.3.16,
         sc:en.1_ne.10.8;
     bp:text
         "standeth one among you whom ye know not ... whose shoe's latchet I am not worthy to unloose"
