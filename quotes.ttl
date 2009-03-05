@@ -17,3 +17,86 @@
     bp:text
         "grow up as calves of the stall"
 .
+
+[]
+    bp:quoted_in
+        sc:en.john.1.23,
+        sc:en.isa.40.3,
+        sc:en.1_ne.10.8;
+    bp:text
+        "cry in the wilderness, Prepare ye the way of the Lord ... make his paths/highway straight"
+.
+
+[]
+    bp:quoted_in
+        sc:en.john.1.26-27,
+        sc:en.1_ne.10.8;
+    bp:text
+        "standeth one among you whom ye know not ... whose shoe's latchet I am not worthy to unloose"
+.
+
+[]
+    bp:quoted_in
+        sc:en.john.1.28,
+        sc:en.1_ne.10.9;
+    bp:text
+        "baptize in Bethabara, beyond Jordan"
+.
+
+[]
+    bp:quoted_in
+        sc:en.john.1.29,
+        sc:en.1_ne.10.10;
+    bp:text
+        "the Lamb of God ... taketh away the sin of the world"
+.
+
+[]
+    bp:quoted_in
+        sc:en.john.1.29,
+        sc:en.1_ne.10.10;
+    bp:text
+        "the Lamb of God ... taketh away the sin of the world"
+.
+
+[]
+    bp:quoted_in
+        sc:en.heb.11.6,
+        sc:en.1_ne.10.17;
+    bp:text
+        "those who diligently seek him"
+.
+
+[]
+    bp:quoted_in
+        sc:en.heb.13.8,
+        sc:en.1_ne.10.18;
+    bp:text
+        "same yesterday, today and forever"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.10.21,
+        sc:en.1_ne.15.34,
+        sc:en.alma.7.21,
+        sc:en.alma.11.37,
+        sc:en.alma.40.26,
+        sc:en.3_ne.27.19,
+        sc:en.moses.6.57;
+    bp:text
+        "no unclean thing can [inherit kingdom of | dwell with] God"
+.
+
+# this one is questionable.  the commonality between the verses is probably
+# better understood by the common practice of cultivating domestic olive trees
+# rather than a common textual history.  nevertheless, it might prove
+# interesting and can be removed at any time if it's not
+[]
+    bp:quoted_in
+        sc:en.jacob.5,
+        sc:en.1_ne.10.12-14,
+        sc:en.rom.11.17-24;
+    bp:description
+        "grafting olive branches"
+.
