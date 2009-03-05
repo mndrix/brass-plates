@@ -11,6 +11,42 @@
 
 []
     bp:quoted_in
+        sc:en.1_ne.1.14,
+        sc:en.rev.15.3;
+    bp:text
+        "Great and marvelous are thy works, O Lord God Almighty"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.2.18,
+        sc:en.1_ne.7.8,
+        sc:en.1_ne.15.4,
+        sc:en.mark.3.5;
+    bp:text
+        "grieved because of the hardness of their hearts"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.2.24,
+        sc:en.2_pet.1.13;
+    bp:text
+        "stir you up by putting you in remembrance"
+.
+
+# these passages are probably better explained by the structure of Hebrew
+# rather than quotation from a common text
+[]
+    bp:quoted_in
+        sc:en.1_ne.3.2,
+        sc:en.judg.7.13;
+    bp:text
+        "I dreamed a dream"
+.
+
+[]
+    bp:quoted_in
         sc:en.1_ne.22.24,
         sc:en.3_ne.25.2,
         sc:en.mal.4.2;
