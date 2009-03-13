@@ -133,6 +133,9 @@
     bp:quoted_in
         sc:en.jacob.5,
         sc:en.1_ne.10.12-14,
+        sc:en.1_ne.15.7,
+        sc:en.1_ne.15.12,
+        sc:en.1_ne.15.16,
         sc:en.rom.11.17-24;
     bp:description
         "grafting olive branches"
