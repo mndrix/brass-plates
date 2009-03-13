@@ -125,6 +125,86 @@
         "no unclean thing can [inherit kingdom of | dwell with] God"
 .
 
+[]
+    bp:quoted_in
+        sc:en.1_ne.13.37,
+        sc:en.1_ne.16.2,
+        sc:en.alma.13.29;
+    bp:text
+        "lifted up at the last day"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.13.37,
+        sc:en.isa.52.7;
+    bp:text
+        "publish peace ... tidings of good ... beautiful upon the mountains"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.13.42,
+        sc:en.luke.13.30,
+        sc:en.jacob.5.63,
+        sc:en.ether.13.12,  # explicit quote by Moroni
+        sc:en.mark.10.31;
+    bp:text
+        "first shall be last ... last shall be first"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.14.15-16,
+        sc:en.2_ne.25.12,
+        sc:en.matt.24.6,
+        sc:en.mark.13.7,
+        sc:en.morm.8.30;
+    bp:text
+        "wars and rumors of wars"
+.
+
+# in this case, the origin and the quote are two verses apart
+[]
+    bp:quoted_in
+        sc:en.1_ne.16.1,
+        sc:en.1_ne.16.3;
+    bp:text
+        "thou speakest hard things against us"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.16.29,
+        sc:en.alma.37.6;
+    bp:text
+        "small means ... bring about ... great things"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.17.45,
+        sc:en.eph.4.19;
+    bp:text
+        "past feeling"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.17.46,
+        sc:en.3_ne.8.13;
+    bp:text
+        "smooth places become rough"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.17.55,
+        sc:en.ex.20.12;
+    bp:text
+        "honor thy father and they mother that they days may be long in the land which the Lord thy God shall give thee"
+.
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
