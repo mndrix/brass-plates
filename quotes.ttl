@@ -47,6 +47,58 @@
 
 []
     bp:quoted_in
+        sc:en.1_ne.3.20,
+        sc:en.acts.3.21;
+    bp:text
+        "Spoken by the mouth of all his holy prophets ... since the world began"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.4.13,
+        sc:en.john.11.50;
+    bp:text
+        "one man should die/perish ... nation perish not"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.5.8,
+        sc:en.acts.12.11;
+    bp:text
+        "Now I know of a surety that the Lord hath"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.5.18,
+        sc:en.1_ne.11.36,
+        sc:en.1_ne.14.11,
+        sc:en.1_ne.19.17,
+        sc:en.1_ne.22.28,
+        sc:en.rev.14.6;
+    bp:text
+        "nation, kindred, tongue and people"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.6.5,
+        sc:en.john.17.14;
+    bp:text
+        "are not of the world"
+.
+
+[]
+    bp:quoted_in
+        sc:en.1_ne.6.5,
+        sc:en.john.17.14;
+    bp:text
+        "are not of the world"
+.
+
+[]
+    bp:quoted_in
         sc:en.1_ne.22.24,
         sc:en.3_ne.25.2,
         sc:en.mal.4.2;
@@ -90,10 +142,33 @@
 
 []
     bp:quoted_in
-        sc:en.john.1.29,
-        sc:en.1_ne.10.10;
+        sc:en.heb.13.8,
+        sc:en.1_ne.10.18;
     bp:text
-        "the Lamb of God ... taketh away the sin of the world"
+        "the same yesterday, today, and forever"
+.
+
+[]
+    bp:quoted_in
+        sc:en.mat.25.34,
+        sc:en.1_ne.10.18,
+        sc:en.2_ne.9.18,
+        sc:en.mosiah.4.6,
+        sc:en.mosiah.4.7,
+        sc:en.mosiah.15.19,
+        sc:en.mosiah.18.13,
+        sc:en.alma.12.30,
+        sc:en.alma.13.3,
+        sc:en.alma.13.5,
+        sc:en.alma.13.7,
+        sc:en.alma.18.39,
+        sc:en.alma.22.13,
+        sc:en.alma.42.26,
+        sc:en.ether.3.14,
+        sc:en.ether.4.19,
+        sc:en.moses.5.57;
+    bp:text
+        "prepared ... from the foundation of the world"
 .
 
 []
