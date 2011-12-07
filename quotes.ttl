@@ -91,14 +91,6 @@
 
 []
     bp:quoted_in
-        sc:en.1_ne.6.5,
-        sc:en.john.17.14;
-    bp:text
-        "are not of the world"
-.
-
-[]
-    bp:quoted_in
         sc:en.1_ne.22.24,
         sc:en.3_ne.25.2,
         sc:en.mal.4.2;
