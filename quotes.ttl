@@ -272,6 +272,14 @@
         "honor thy father and they mother that they days may be long in the land which the Lord thy God shall give thee"
 .
 
+[]
+    bp:quoted_in
+        sc:en.morm.9.28,
+        sc:en.james.4.3;
+    bp:text
+        "that ye may consume it upon your lusts"
+.
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
