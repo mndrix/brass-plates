@@ -68,6 +68,7 @@ $g->add_edge(
     label                      => 'Lehi-Nephi',
     %place_label,
 );
+# Zeniff departs Zarahemla: Mosiah 9:3
 $g->add_edge(
     'Mosiah finds Zarahemla' => 'Zeniff departs Zarahemla',
     label                    => 'Zarahemla',
@@ -105,7 +106,29 @@ $g->add_edge(
     %person_label,
 );
 
+# TODO integrate this sequence into the graph:
+#       * Anti-Nephi-Lehites depart Land of Nephi (Alma 27:1-2)
+#       * Ammon and Alma meet (Alma 27:16)
+#       * Zarahemla votes (Alma 27:22)
+#       * Alma leaves Zarahemla/Jershon for Antionum (Alma 31:6)
+#       * Alma and Amulek return to Jershon (Alma 35:1-2)
+#       * Believers cast out of Antionum into Jershon (Alma 35:6)
 
+# TODO Suggestion for better encoding:
+#       Maybe each event could be encoded in Prolog something like
+#           event(What,Who,Where,When,Why,How) or
+#           event(What, [who(Who),where(Where),when(When),why(Why),how(How)])
+#       Then I could attach lots of information to a particular event
+#       along with relevant scripture references and query the graph to
+#       find information like "who was present at the time Alma left Jershon"
+#       'What' is a canonical name for the event.
+#       from(Origin) and to(Destination) could also be good attributes
+#       alowing sanity checks to make sure graph edges agree on the physical
+#       location of an event.  With these attributes, where(Where) can be
+#       derived.
+
+
+# TODO add scriptural references for each node in the graph
 # TODO there are probably more nodes along these edges
 # TODO add Christ dictating the words of Malachi to the Nephites
 $g->add_edge( "Alma arrives in Zarahemla"   => 'Standard Works' );
