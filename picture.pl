@@ -102,6 +102,7 @@ $g->add_edge(
     %place_label,
 );
 
+# Ammon leaves Zarahemla: Mosiah 7:2-3
 $g->add_edge(
     "Zeniff departs Zarahemla\n(second time)" => 'Ammon leaves Zarahemla',
     label                      => 'Zarahemla',
@@ -112,6 +113,8 @@ $g->add_edge(
     label                      => 'Zeniff',
     %person_label,
 );
+
+# Ammon finds the Limhites: Mosiah 7:7
 $g->add_edge(
     'Ammon leaves Zarahemla' => 'Ammon finds the Limhites',
     label                    => 'Ammon',
