@@ -68,19 +68,19 @@ $g->add_edge(
     label                      => 'Lehi-Nephi',
     %place_label,
 );
-# Zeniff departs Zarahemla: Mosiah 9:3
+# Zeniff departs Zarahemla again: Omni 1:29, Mosiah 9:3
 $g->add_edge(
-    'Mosiah finds Zarahemla' => 'Zeniff departs Zarahemla',
+    'Mosiah finds Zarahemla' => 'Zeniff departs Zarahemla again',
     label                    => 'Zarahemla',
     %place_label,
 );
 $g->add_edge(
-    'Zeniff departs Zarahemla' => 'Ammon leaves Zarahemla',
+    'Zeniff departs Zarahemla again' => 'Ammon leaves Zarahemla',
     label                      => 'Zarahemla',
     %place_label,
 );
 $g->add_edge(
-    'Zeniff departs Zarahemla' => 'Ammon finds the Limhites',
+    'Zeniff departs Zarahemla again' => 'Ammon finds the Limhites',
     label                      => 'Zeniff',
     %person_label,
 );
