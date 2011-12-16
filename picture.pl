@@ -68,19 +68,47 @@ $g->add_edge(
     label                      => 'Lehi-Nephi',
     %place_label,
 );
-# Zeniff departs Zarahemla again: Omni 1:29, Mosiah 9:3
+
+# Zeniff departs Zarahemla (first time): Omni 1:27, Mosiah 9:1
 $g->add_edge(
-    'Mosiah finds Zarahemla' => 'Zeniff departs Zarahemla again',
+    'Mosiah finds Zarahemla' => "Zeniff departs Zarahemla\n(first time)",
+    label => 'Zarahemla',
+    %place_label,
+);
+
+# Zeniff returns to Zarahemla: Omni 1:28, Mosiah 9:2
+$g->add_edge(
+    "Zeniff departs Zarahemla\n(first time)" => 'Zeniff returns to Zarahemla',
+    label => 'Zeniff',
+    %person_label,
+);
+$g->add_edge(
+    "Zeniff departs Zarahemla\n(first time)" => 'Zeniff returns to Zarahemla',
+    label => 'Zarahemla',
+    %place_label,
+);
+
+# Zeniff departs Zarahemla (second time): Omni 1:29, Mosiah 9:3
+$g->add_edge(
+    'Zeniff returns to Zarahemla' => "Zeniff departs Zarahemla\n(second time)",
     label                    => 'Zarahemla',
     %place_label,
 );
+
+# Zeniff possesses Lehi-Nephi: Mosiah 9:7
 $g->add_edge(
-    'Zeniff departs Zarahemla again' => 'Ammon leaves Zarahemla',
+    'Zeniff possesses Lehi-Nephi' => 'Ammon finds the Limhites',
+    label => 'Lehi-Nephi',
+    %place_label,
+);
+
+$g->add_edge(
+    "Zeniff departs Zarahemla\n(second time)" => 'Ammon leaves Zarahemla',
     label                      => 'Zarahemla',
     %place_label,
 );
 $g->add_edge(
-    'Zeniff departs Zarahemla again' => 'Ammon finds the Limhites',
+    "Zeniff departs Zarahemla\n(second time)" => 'Zeniff possesses Lehi-Nephi',
     label                      => 'Zeniff',
     %person_label,
 );
