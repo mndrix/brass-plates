@@ -29,6 +29,10 @@
     object(object_id);
     time(year).
 
+:- pred is_person(detail::in) is semidet.
+
+:- pred is_person(detail::in, person::out) is semidet.
+
 :- pred event( event_id, list(detail)).
 :- mode event(       in,          out) is det.
 :- mode event(      out,          out) is multi.
@@ -37,6 +41,10 @@
 
 
 :- implementation.
+
+is_person(who(_)).
+
+is_person(who(X), X).
 
 event( lehi_leaves_jerusalem, [
     what("Lehi and his family depart Jerusalem"),
