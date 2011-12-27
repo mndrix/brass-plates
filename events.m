@@ -72,6 +72,13 @@ event( brothers_cast_lots, [
     where(outside_jerusalem),
     time(circa(600,bc))
 ]).
+and_then( brothers_return_to_jerusalem, brothers_cast_lots, [
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1)
+]).
+
 event( laman_returns_to_brothers, [
     what("Laman returns to his brothers"),
     who(laman_1),
@@ -157,13 +164,6 @@ and_then( brothers_return_to_jerusalem, brothers_return_to_valley_of_lemuel, [
     who(sariah_1),
     where(valley_of_lemuel)
 ]).
-and_then( brothers_return_to_jerusalem, brothers_cast_lots, [
-    who(laman_1),
-    who(lemuel_1),
-    who(nephi_1),
-    who(sam_1)
-]).
-
 and_then( nephi_returns_to_brothers, brothers_return_to_valley_of_lemuel, [
     who(laman_1),
     who(lemuel_1),
