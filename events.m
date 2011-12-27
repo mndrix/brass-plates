@@ -6,59 +6,9 @@
 
 :- implementation.
 :- import_module list, int, string.
+:- import_module scripture, chronology, people, locations, objects.
 
 % ------------- Types ------------
-
-% a passage of scripture containing one or more verses
-:- type passage --->
-    verse( book, int, int );        % a single verse
-    verses( book, int, int, int ).  % start and end verses in one chapter
-:- type book --->
-        % Old Testament  (TODO: finish)
-
-        % New Testament  (TODO: finish)
-        revelation;
-
-        % Book of Mormon
-        first_nephi;
-        second_nephi;
-        jacob;
-        enos;
-        jarom;
-        omni;
-        words_of_mormon;
-        mosiah;
-        alma;
-        helaman;
-        third_nephi;
-        fourth_nephi;
-        mormon;
-        ether;
-        moroni.
-
-% Persons participating in the scriptural record.  A constructor consists of a
-% name and a number.  This matches the convention used in the Book of Mormon
-% Reference Companion and various Bible dictionaries.
-:- type person --->
-    laman_1;
-    lehi_1;
-    lemuel_1;
-    nephi_1;
-    sam_1;
-    sariah_1;
-    zoram.
-
-% locations where events occurred
-:- type location --->
-    jerusalem;
-    valley_of_lemuel;
-    outside_jerusalem.
-
-:- type era ---> bc; ad.
-
-:- type year --->
-    circa( int, era );
-    exactly( int, era ).
 
 % unique identifiers for each event
 :- type event_id --->
@@ -70,10 +20,6 @@
     nephi_visits_labans_treasury;
     nephi_returns_to_brothers;
     brothers_return_to_valley_of_lemuel.
-
-% identifiers for physical objects
-:- type object_id --->
-    brass_plates.
 
 % possible details about an event
 :- type detail --->

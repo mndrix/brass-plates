@@ -1,7 +1,7 @@
+*.err
+*.mh
 .*.swp
 Mercury/
 events
-events.err
-events.mh
 graph.dot
 graph.png
