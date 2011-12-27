@@ -101,14 +101,25 @@ print_nodes([S|Ss], !IO) :-
     format("    \"%s\";\n", [s(S)], !IO),
     print_nodes(Ss, !IO).
 
-:- pred event_edges({string,string}::out) is nondet.
-event_edges({From,To}) :-
-    and_then(FromNode,ToNode,_),
+:- pred event_edges({string,string,string}::out) is nondet.
+event_edges({From,To,Who}) :-
+    and_then(FromNode,ToNode,EdgeDetails),
+    Who = (if whos_present(EdgeDetails,W) then W else ""),
     event( FromNode, FromDetails ), member(what(From),FromDetails),
     event( ToNode,   ToDetails ),   member(what(To),  ToDetails).
 
-:- pred print_edges(list({string,string})::in, io::di, io::uo) is det.
+:- pred print_edges(list({string,string,string})::in, io::di, io::uo) is det.
 print_edges([],!IO).
-print_edges([{From,To}|Es], !IO) :-
-    format("    \"%s\" -> \"%s\";\n", [s(From),s(To)], !IO ),
+print_edges([{From,To,Label}|Es], !IO) :-
+    format(
+        "    \"%s\" -> \"%s\" [label=\"%s\"];\n",
+        [s(From),s(To),s(Label)],
+        !IO
+    ),
     print_edges(Es, !IO).
+
+:- pred whos_present(list(detail)::in, string::out) is semidet.
+whos_present(Details,EtAl) :-
+    filter( is_person, Details, PeopleDetails),
+    map( is_person, PeopleDetails, People ),
+    etal( People, EtAl ).
