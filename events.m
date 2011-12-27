@@ -122,7 +122,7 @@ and_then( lehi_leaves_jerusalem, brothers_return_to_jerusalem, [
 ]).
 
 event( brothers_cast_lots, [
-    what("Lehi's sons cast lots about entering Jerusalem"),
+    what("Lehi's sons cast lots"),
     citation(verse(first_nephi,3,11)),
     who(laman_1),
     who(lemuel_1),
@@ -132,7 +132,7 @@ event( brothers_cast_lots, [
     time(circa(600,bc))
 ]).
 event( laman_returns_to_brothers, [
-    what("Laman returns to his brothers after Laban casts him out"),
+    what("Laman returns to his brothers"),
     who(laman_1),
     who(lemuel_1),
     who(nephi_1),
@@ -151,7 +151,7 @@ and_then( brothers_cast_lots, laman_returns_to_brothers, [
 ]).
 
 event( nephi_creeps_into_jerusalem, [
-    what("Nephi creeps into Jerusalem to get the brass plates"),
+    what("Nephi creeps into Jerusalem"),
     citation(verse(first_nephi,4,5)),
     who(laman_1),
     who(lemuel_1),
@@ -160,8 +160,9 @@ event( nephi_creeps_into_jerusalem, [
     where(outside_jerusalem),
     time(circa(600,bc))
 ]).
+
 event( nephi_visits_labans_treasury, [
-    what("Nephi visits Laban's treasury to get the brass plates"),
+    what("Nephi visits Laban's treasury"),
     citation(verse(first_nephi,4,20)),
     who(nephi_1),
     who(zoram),
@@ -170,7 +171,7 @@ event( nephi_visits_labans_treasury, [
     time(circa(600,bc))
 ]).
 event( nephi_returns_to_brothers, [
-    what("Nephi returns to his brothers after getting the brass plates"),
+    what("Nephi returns to his brothers with the brass plates"),
     citation(verse(first_nephi,4,28)),
     who(laman_1),
     who(lemuel_1),
