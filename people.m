@@ -7,6 +7,8 @@
 % Reference Companion and various Bible dictionaries.
 % If only one person ever has that name, the number is omitted.
 :- type person --->
+    ishmael_1;
+    ishmaels_children;
     laman_1;
     lehi_1;
     lemuel_1;

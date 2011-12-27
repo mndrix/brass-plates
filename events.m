@@ -13,7 +13,10 @@
     nephi_creeps_into_jerusalem;
     nephi_visits_labans_treasury;
     nephi_returns_to_brothers;
-    brothers_return_to_valley_of_lemuel.
+    brothers_return_to_valley_of_lemuel;
+    brothers_send_for_ishmael;
+    ishmael_departs_jerusalem;
+    ishmael_arrives_in_valley_of_lemuel.
 
 % possible details about an event
 :- type detail --->
@@ -171,3 +174,68 @@ and_then( nephi_returns_to_brothers, brothers_return_to_valley_of_lemuel, [
     who(sam_1)
 ]).
 
+event( brothers_send_for_ishmael, [
+    what("Lehi's sons return to Jerusalem to get Ishmael"),
+    citation(verse(first_nephi,7,3)),
+    who(lehi_1),
+    who(sariah_1),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(zoram),
+    object(brass_plates),
+    where(valley_of_lemuel),
+    time(between(600,bc, 592,bc))
+]).
+and_then( brothers_return_to_valley_of_lemuel, brothers_send_for_ishmael, [
+]).
+
+event( ishmael_departs_jerusalem, [
+    what("Ishmael and his household leave Jerusalem"),
+    citation(verse(first_nephi,7,5)),
+    where(jerusalem),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children)
+]).
+and_then( brothers_send_for_ishmael, ishmael_departs_jerusalem, [
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1)
+]).
+
+event( ishmael_arrives_in_valley_of_lemuel, [
+    what("Lehi's sons and Ishmael's family arrive at Lehi's tent"),
+    citation(verse(first_nephi,7,22)),
+    where(valley_of_lemuel),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children),
+    object(brass_plates)
+]).
+and_then( ishmael_departs_jerusalem, ishmael_arrives_in_valley_of_lemuel, [
+    citation(verses(first_nephi,7,6,21)),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children)
+]).
+and_then( brothers_send_for_ishmael, ishmael_arrives_in_valley_of_lemuel, [
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    object(brass_plates)
+]).
