@@ -6,7 +6,7 @@
 
 :- type year --->
     circa( int, era );
-    exactly( int, era ).
+    between( int, era, int, era ).  % one within a range, inclusive
 
 
 :- implementation.
