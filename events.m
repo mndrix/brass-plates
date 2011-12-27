@@ -1,14 +1,8 @@
 :- module events.
 
 :- interface.
-:- import_module io.
-:- pred main(io::di,io::uo) is cc_multi.
-
-:- implementation.
-:- import_module list, int, string.
-:- import_module scripture, chronology, people, locations, objects.
-
-% ------------- Types ------------
+:- import_module list, string.
+:- import_module scripture, people, locations, chronology, objects.
 
 % unique identifiers for each event
 :- type event_id --->
@@ -32,13 +26,14 @@
     object(object_id);
     time(year).
 
-
-% ------------- Events ------------
-
 :- pred event( event_id, list(detail)).
 :- mode event(       in,          out) is det.
 :- mode event(      out,          out) is multi.
+
 :- pred and_then(event_id::out, event_id::out,list(detail)::out) is multi.
+
+
+:- implementation.
 
 event( lehi_leaves_jerusalem, [
     what("Lehi and his family depart Jerusalem"),
@@ -176,50 +171,3 @@ and_then( nephi_returns_to_brothers, brothers_return_to_valley_of_lemuel, [
     who(sam_1)
 ]).
 
-
-% -------------------- Main and Helpers --------------- %
-:- import_module solutions.
-main(!IO) :-
-    % output dot file header
-    tell("graph.dot", _, !IO),
-    print("digraph events {\n", !IO),
-
-    % output dot file nodes
-    unsorted_solutions( event_description, Nodes ),
-    print_nodes(Nodes, !IO),
-
-    % output dot file edges
-    unsorted_solutions( event_edges, Edges ),
-    print_edges(Edges, !IO),
-
-    % output dot file footer
-    print("}\n", !IO),
-    told(!IO).
-
-:- pred event_description(string::out) is nondet.
-event_description(Desc) :-
-    event(_,Details),
-    member(who(lehi_1),Details),
-    (
-    if   member(what(D),Details)
-    then Desc = D
-    else Desc = "(unknown)"
-    ).
-
-:- pred print_nodes(list(string)::in, io::di, io::uo) is det.
-print_nodes([], !IO).
-print_nodes([S|Ss], !IO) :-
-    format("    \"%s\";\n", [s(S)], !IO),
-    print_nodes(Ss, !IO).
-
-:- pred event_edges({string,string}::out) is nondet.
-event_edges({From,To}) :-
-    and_then(FromNode,ToNode,_),
-    event( FromNode, FromDetails ), member(what(From),FromDetails),
-    event( ToNode,   ToDetails ),   member(what(To),  ToDetails).
-
-:- pred print_edges(list({string,string})::in, io::di, io::uo) is det.
-print_edges([],!IO).
-print_edges([{From,To}|Es], !IO) :-
-    format("    \"%s\" -> \"%s\";\n", [s(From),s(To)], !IO ),
-    print_edges(Es, !IO).

@@ -2,6 +2,6 @@
 *.mh
 .*.swp
 Mercury/
-events
+bp
 graph.dot
 graph.png
