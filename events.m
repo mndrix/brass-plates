@@ -1,7 +1,7 @@
 :- module events.
 
 :- interface.
-:- import_module list, string.
+:- import_module list.
 :- import_module scripture, people, locations, chronology, objects.
 
 % unique identifiers for each event

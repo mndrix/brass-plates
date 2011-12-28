@@ -1,7 +1,7 @@
 :- module people.
 
 :- interface.
-:- import_module list, string.
+:- import_module list.
 
 % Persons participating in the scriptural record.  A constructor consists of a
 % name and a number.  This matches the convention used in the Book of Mormon
@@ -25,6 +25,7 @@
 :- pred etal(list(person)::in, string::out) is semidet.
 
 :- implementation.
+:- import_module string.
 
 person_name(ishmael_1,          "Ishmael").
 person_name(ishmaels_children,  "Ishmael's Children").
