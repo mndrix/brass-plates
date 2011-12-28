@@ -4,6 +4,7 @@
 
 % identifiers for physical objects
 :- type object_id --->
-    brass_plates.
+    brass_plates;
+    sword_of_laban.
 
 :- implementation.

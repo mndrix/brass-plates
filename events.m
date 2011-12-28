@@ -126,6 +126,7 @@ event( nephi_visits_labans_treasury, [
     who(nephi_1),
     who(zoram),
     object(brass_plates),
+    object(sword_of_laban),  % actually appeared first in verse 9
     where(jerusalem),
     time(circa(600,bc))
 ]).
@@ -138,6 +139,7 @@ event( nephi_returns_to_brothers, [
     who(sam_1),
     who(zoram),
     object(brass_plates),
+    object(sword_of_laban),
     where(outside_jerusalem),
     time(circa(600,bc))
 ]).
@@ -167,6 +169,7 @@ event( brothers_return_to_valley_of_lemuel, [
     who(sam_1),
     who(zoram),
     object(brass_plates),
+    object(sword_of_laban),
     where(valley_of_lemuel),
     time(circa(600,bc))
 ]).
@@ -193,6 +196,7 @@ event( brothers_send_for_ishmael, [
     who(sam_1),
     who(zoram),
     object(brass_plates),
+    object(sword_of_laban),
     where(valley_of_lemuel),
     time(between(600,bc, 592,bc))
 ]).
@@ -230,6 +234,7 @@ event( ishmael_arrives_in_valley_of_lemuel, [
     who(sam_1),
     who(ishmael_1),
     who(ishmaels_children),
+    object(sword_of_laban),
     object(brass_plates)
 ]).
 and_then( ishmael_departs_jerusalem, ishmael_arrives_in_valley_of_lemuel, [
