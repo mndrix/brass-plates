@@ -5,7 +5,8 @@
 % a passage of scripture containing one or more verses
 :- type passage --->
     verse( book, int, int );        % a single verse
-    verses( book, int, int, int ).  % start and end verses in one chapter
+    verses( book, int, int, int );  % start and end verses in one chapter
+    chapters( book, int, int ).     % start and end chapters in one book
 
 % all scripture books
 :- type book --->

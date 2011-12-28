@@ -5,7 +5,9 @@
 % locations where events occurred
 :- type location --->
     jerusalem;
-    valley_of_lemuel;
-    outside_jerusalem.
+    nahom;
+    outside_jerusalem;
+    shazer;
+    valley_of_lemuel.
 
 :- implementation.

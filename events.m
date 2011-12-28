@@ -3,6 +3,7 @@
 :- interface.
 :- import_module list.
 :- import_module scripture, people, locations, chronology, objects.
+:- import_module time_span.
 
 % unique identifiers for each event
 :- type event_id --->
@@ -16,11 +17,17 @@
     brothers_return_to_valley_of_lemuel;
     brothers_send_for_ishmael;
     ishmael_departs_jerusalem;
-    ishmael_arrives_in_valley_of_lemuel.
+    ishmael_arrives_in_valley_of_lemuel;
+    lehi_finds_liahona;
+    pitch_tents_in_shazer;
+    pitched_tents_for_a_time;
+    lehi_resumes_journey;
+    lehi_arrives_in_nahom.
 
 % possible details about an event
 :- type detail --->
     citation(passage);
+    duration(time_span);
     who(person);
     what(string);
     where(location);
@@ -250,5 +257,119 @@ and_then( brothers_send_for_ishmael, ishmael_arrives_in_valley_of_lemuel, [
     who(lehi_1),
     who(sariah_1),
     who(zoram),
+    object(sword_of_laban),
     object(brass_plates)
+]).
+
+event( lehi_finds_liahona, [
+    what("Lehi finds the Liahona"),
+    citation(verse(first_nephi,16,10)),
+    where(valley_of_lemuel),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+and_then( ishmael_arrives_in_valley_of_lemuel, lehi_finds_liahona, [
+    citation(chapters(first_nephi,8,15)),
+    citation(verses(first_nephi,16,1,6)),
+    where(valley_of_lemuel)   % see 1Ne 16:6
+]).
+
+event( pitch_tents_in_shazer, [
+    what("Lehi's group arrives at Shazer"),
+    citation(verse(first_nephi,16,13)),
+    where(shazer),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+and_then( lehi_finds_liahona, pitch_tents_in_shazer, [
+    citation(verses(first_nephi,16,12,13)),
+    duration(days(4))  % see 1Ne 16:13
+]).
+
+event( pitched_tents_for_a_time, [
+    what("Lehi's group pitches tents for a time"),
+    citation(verse(first_nephi,16,17)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+and_then( pitch_tents_in_shazer, pitched_tents_for_a_time, [
+    citation(verses(first_nephi,16,14,16)),
+    duration(many_days)   % see 1Ne 16:15,17
+]).
+
+event( lehi_resumes_journey, [
+    what("Lehi's group resumes journey"),
+    citation(verse(first_nephi,16,33)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),
+    who(ishmaels_children),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+and_then( pitched_tents_for_a_time, lehi_resumes_journey, [
+    citation(verses(first_nephi,16,18,32))
+]).
+
+and_then( lehi_resumes_journey, lehi_arrives_in_nahom, [
+    citation(verse(first_nephi,16,33)),
+    duration(many_days)
+]).
+event( lehi_arrives_in_nahom, [
+    what("Lehi's group arrives in Nahom"),
+    citation(verses(first_nephi,16,33,34)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmael_1),       % he's buried shortly after this event
+    who(ishmaels_children),
+    where(nahom),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
 ]).
