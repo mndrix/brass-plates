@@ -22,7 +22,9 @@
     pitch_tents_in_shazer;
     pitched_tents_for_a_time;
     lehi_resumes_journey;
-    lehi_arrives_in_nahom.
+    lehi_arrives_in_nahom;
+    lehi_travels_eastward;
+    lehi_arrives_in_bountiful.
 
 % possible details about an event
 :- type detail --->
@@ -373,3 +375,46 @@ event( lehi_arrives_in_nahom, [
     object(sword_of_laban),
     object(liahona)
 ]).
+
+and_then( lehi_arrives_in_nahom, lehi_travels_eastward, [
+    citation(verses(first_nephi,16,33,39))
+]).
+event( lehi_travels_eastward, [
+    what("Lehi resumes his journey, headed eastward"),
+    citation(verse(first_nephi,17,1)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    where(nahom),
+    time(between(600,bc, 592,bc)),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+
+and_then( lehi_travels_eastward, lehi_arrives_in_bountiful, [
+    citation(verses(first_nephi,17,1,4))
+]).
+event( lehi_arrives_in_bountiful, [
+    what("Lehi's group arrives in Bountiful"),
+    citation(verse(first_nephi,17,5)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    where(bountiful_1),
+    time(circa(592,bc)),   % See 1Ne 17:4
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+
