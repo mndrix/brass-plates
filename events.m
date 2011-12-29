@@ -24,7 +24,8 @@
     lehi_resumes_journey;
     lehi_arrives_in_nahom;
     lehi_travels_eastward;
-    lehi_arrives_in_bountiful.
+    lehi_arrives_in_bountiful;
+    lehi_sets_sail.
 
 % possible details about an event
 :- type detail --->
@@ -418,3 +419,25 @@ event( lehi_arrives_in_bountiful, [
     object(liahona)
 ]).
 
+and_then( lehi_arrives_in_bountiful, lehi_sets_sail, [
+    citation(verses(first_nephi,17,6,55)),
+    citation(verses(first_nephi,18,1,7))
+]).
+event( lehi_sets_sail, [
+    what("Lehi's group sets sail"),
+    citation(verse(first_nephi,18,8)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    who(jacob_2),
+    who(joseph_2),
+    where(bountiful_1),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).

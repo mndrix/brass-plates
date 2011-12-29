@@ -10,6 +10,8 @@
 :- type person --->
     ishmael_1;
     ishmaels_children;
+    jacob_2;
+    joseph_2;
     laman_1;
     lehi_1;
     lemuel_1;
@@ -29,6 +31,8 @@
 
 person_name(ishmael_1,          "Ishmael").
 person_name(ishmaels_children,  "Ishmael's Children").
+person_name(jacob_2,            "Jacob").
+person_name(joseph_2,           "Joseph").
 person_name(laman_1,            "Laman").
 person_name(lehi_1,             "Lehi").
 person_name(lemuel_1,           "Lemuel").
