@@ -6,6 +6,7 @@
 :- type passage --->
     verse( book, int, int );        % a single verse
     verses( book, int, int, int );  % start and end verses in one chapter
+    chapter( book, int );           % a single chapter
     chapters( book, int, int ).     % start and end chapters in one book
 
 % all scripture books

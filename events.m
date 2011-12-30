@@ -25,7 +25,12 @@
     lehi_arrives_in_nahom;
     lehi_travels_eastward;
     lehi_arrives_in_bountiful;
-    lehi_sets_sail.
+    lehi_sets_sail;
+    arrive_in_promised_land;
+    lehi_dies;
+    nephi_leaves_laman;
+    city_of_nephi_founded;
+    first_lamanite_nephite_wars.
 
 % possible details about an event
 :- type detail --->
@@ -66,7 +71,7 @@ event( lehi_leaves_jerusalem, [
     who(sam_1),
     who(nephi_1),
     where(jerusalem),
-    time(circa(600,bc))
+    time(circa(600,bc))   % See 1Ne 19:8
 ]).
 event( brothers_return_to_jerusalem, [
     what("Lehi's sons return to Jerusalem for the brass plates"),
@@ -440,4 +445,109 @@ event( lehi_sets_sail, [
     object(brass_plates),
     object(sword_of_laban),
     object(liahona)
+]).
+
+and_then( lehi_sets_sail, arrive_in_promised_land, [
+    duration(many_days)   % See 1Ne 18:23
+]).
+event( arrive_in_promised_land, [
+    what("Lehi's group arrives in the promised land"),
+    citation(verse(first_nephi,18,23)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    who(jacob_2),
+    who(joseph_2),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+
+and_then( arrive_in_promised_land, lehi_dies, [
+    citation(verses(first_nephi,18,24,25)),
+    citation(chapters(first_nephi,19,22)),
+    citation(chapter(second_nephi,1)),
+    citation(chapters(second_nephi,2,3)),
+    citation(verses(second_nephi,4,1,11))
+]).
+event( lehi_dies, [
+    what("Lehi dies"),
+    citation(verse(second_nephi,4,12)),
+    who(lehi_1),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    who(jacob_2),
+    who(joseph_2),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+
+and_then( lehi_dies, nephi_leaves_laman, [
+    citation(verses(second_nephi,4,13,35)),
+    citation(verses(second_nephi,5,1,5)),
+    duration(not_many_days)   % See 2Ne 4:13
+]).
+event( nephi_leaves_laman, [
+    what("Nephi's people separate from Laman's people"),
+    citation(verses(second_nephi,5,6,7)),
+    who(sariah_1),
+    who(zoram),
+    who(laman_1),
+    who(lemuel_1),
+    who(nephi_1),
+    who(sam_1),
+    who(ishmaels_children),
+    who(jacob_2),
+    who(joseph_2),
+    object(brass_plates),
+    object(sword_of_laban),
+    object(liahona)
+]).
+
+and_then( nephi_leaves_laman, city_of_nephi_founded, [
+    who(nephi_1),
+    who(zoram),
+    who(sam_1),
+    who(jacob_2),
+    who(joseph_2),
+    who(lehi_1_daughters),
+    duration(many_days)   % See 2Ne 5:7
+]).
+and_then( nephi_leaves_laman, first_lamanite_nephite_wars, [
+    who(laman_1),
+    who(lemuel_1)
+]).
+event( city_of_nephi_founded, [
+    what("Nephites establish the city of Nephi"),
+    citation(verses(second_nephi,5,7,8)),
+    who(nephi_1),
+    who(zoram),
+    who(sam_1),
+    who(jacob_2),
+    who(joseph_2),
+    who(lehi_1_daughters),
+    where(city_of_nephi),
+    object(brass_plates),    % See 2Ne 5:12
+    object(sword_of_laban),  % See 2Ne 5:14
+    object(liahona)          % See 2Ne 5:12
+]).
+
+and_then( city_of_nephi_founded, first_lamanite_nephite_wars, [
+    citation(verses(second_nephi,5,8,33))
+]).
+event( first_lamanite_nephite_wars, [
+    what("First wars between Lamanites and Nephites"),
+    citation(verse(second_nephi,5,34)),
+    time(circa(560,bc))
 ]).

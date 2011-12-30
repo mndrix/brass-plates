@@ -14,6 +14,7 @@
     joseph_2;
     laman_1;
     lehi_1;
+    lehi_1_daughters;  % Lehi's daughters
     lemuel_1;
     nephi_1;
     sam_1;
@@ -35,6 +36,7 @@ person_name(jacob_2,            "Jacob").
 person_name(joseph_2,           "Joseph").
 person_name(laman_1,            "Laman").
 person_name(lehi_1,             "Lehi").
+person_name(lehi_1_daughters,   "Lehi's Daughters").
 person_name(lemuel_1,           "Lemuel").
 person_name(nephi_1,            "Nephi").
 person_name(sam_1,              "Sam").
