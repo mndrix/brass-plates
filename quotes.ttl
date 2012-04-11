@@ -280,6 +280,14 @@
         "that ye may consume it upon your lusts"
 .
 
+[]
+    bp:quoted_in
+        sc:en.2_cor.6.17,
+        sc:en.alma.5.57;
+    bp:text
+        "come out from among them, and be ye separate, and touch not the unclean thing"
+.
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
