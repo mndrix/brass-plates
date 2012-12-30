@@ -288,6 +288,13 @@
         "come out from among them, and be ye separate, and touch not the unclean thing"
 .
 
+[]
+    bp:quoted_in
+        sc:en.prov.3.6,
+        sc:en.alma.37.37;
+    bp:text
+        "(counsel with|acknowledge) (the Lord|him) in all thy (doings|ways), and he (will|shall) direct (thee for good|thy paths)"
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
