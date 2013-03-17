@@ -295,6 +295,12 @@
     bp:text
         "(counsel with|acknowledge) (the Lord|him) in all thy (doings|ways), and he (will|shall) direct (thee for good|thy paths)"
 
+[]
+    bp:quoted_in
+        sc:en.1_cor.12.31,
+        sc:en.ether.12.11;
+    bp:text "gift ... a more excellent way".
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
