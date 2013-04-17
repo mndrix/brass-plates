@@ -316,3 +316,12 @@
     bp:description
         "grafting olive branches"
 .
+
+[]
+    bp:quoted_in
+        sc:en.enos.1.27,
+        sc:en.1_cor.15.53,
+        sc:en.1_cor.15.5;
+    bp:description
+        "mortal .. put on immortality"
+.
