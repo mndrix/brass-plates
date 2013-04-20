@@ -7,6 +7,7 @@
 
 % unique identifiers for each event
 :- type event_id --->
+    jerusalem_before_it_all;
     lehi_leaves_jerusalem;
     brothers_return_to_jerusalem;
     brothers_cast_lots;
@@ -30,7 +31,13 @@
     lehi_dies;
     nephi_leaves_laman;
     city_of_nephi_founded;
-    first_lamanite_nephite_wars.
+    first_lamanite_nephite_wars;
+    mosiah_leaves_land_of_nephi;
+    mosiah_arrives_in_zarahemla;
+    siege_of_jerusalem;
+    mulekites_depart_jerusalem;
+    mulekites_found_zarahemla;
+    mulekites_discover_coriantumr.
 
 % possible details about an event
 :- type detail --->
@@ -61,6 +68,12 @@ is_person(who(_)).
 
 is_person(who(X), X).
 
+event( jerusalem_before_it_all, [
+    what("Jerusalem before BoM starts")
+]).
+
+and_then( jerusalem_before_it_all, lehi_leaves_jerusalem, [
+]).
 event( lehi_leaves_jerusalem, [
     what("Lehi and his family depart Jerusalem"),
     citation(verses(first_nephi, 2, 4, 5)),
@@ -551,3 +564,57 @@ event( first_lamanite_nephite_wars, [
     citation(verse(second_nephi,5,34)),
     time(circa(560,bc))
 ]).
+
+and_then( city_of_nephi_founded, mosiah_leaves_land_of_nephi, [
+    citation(verse(omni,1,13))
+]).
+event( mosiah_leaves_land_of_nephi, [
+    what("Mosiah and his people flee out of the land of Nephi"),
+    citation(verse(omni,1,13)),
+    time(circa(324,bc))
+]).
+
+and_then( mosiah_leaves_land_of_nephi, mosiah_arrives_in_zarahemla, [
+    citation(verse(omni,1,14))
+]).
+event( mosiah_arrives_in_zarahemla, [
+    what("Mosiah and his people discover Zarahemla"),
+    citation(verse(omni,1,14)),
+    time(circa(324,bc))
+]).
+
+and_then( jerusalem_before_it_all, siege_of_jerusalem, [
+]).
+event( siege_of_jerusalem, [
+    what("Jerusalem captured by Babylonians"),
+    time(circa(587,bc))
+]).
+
+and_then( siege_of_jerusalem, mulekites_depart_jerusalem, [
+    citation(verse(omni,1,15))
+]).
+event( mulekites_depart_jerusalem, [
+    what("People of Zarahemla leave Jerusalem"),
+    citation(verse(omni,1,15)),
+    time(circa(587,bc))
+]).
+
+and_then( mulekites_depart_jerusalem, mulekites_found_zarahemla, [
+    citation(verse(omni,1,16))
+]).
+event( mulekites_found_zarahemla, [
+    what("Mulekites arrive in the New World"),
+    citation(verse(omni,1,16))
+]).
+
+and_then( mulekites_found_zarahemla, mulekites_discover_coriantumr, [
+    citation(verse(omni,1,21))
+]).
+and_then(mulekites_discover_coriantumr, mosiah_arrives_in_zarahemla, [
+    citation(verse(omni,1,20))
+]).
+event( mulekites_discover_coriantumr, [
+    what("People of Zarahemla discover Coriantumr"),
+    citation(verse(omni,1,21))
+]).
+% TODO continue. starting with the Words of Mormon
