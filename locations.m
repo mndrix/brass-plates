@@ -10,6 +10,7 @@
     nahom;
     outside_jerusalem;
     shazer;
-    valley_of_lemuel.
+    valley_of_lemuel;
+    zarahemla.
 
 :- implementation.

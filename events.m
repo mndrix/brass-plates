@@ -604,6 +604,7 @@ and_then( mulekites_depart_jerusalem, mulekites_found_zarahemla, [
 ]).
 event( mulekites_found_zarahemla, [
     what("Mulekites arrive in the New World"),
+    where(zarahemla),
     citation(verse(omni,1,16))
 ]).
 
