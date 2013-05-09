@@ -7,6 +7,7 @@
     bountiful_1;
     city_of_nephi;
     jerusalem;
+    lehi_nephi;
     nahom;
     outside_jerusalem;
     shazer;

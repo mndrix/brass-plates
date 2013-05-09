@@ -37,7 +37,9 @@
     siege_of_jerusalem;
     mulekites_depart_jerusalem;
     mulekites_found_zarahemla;
-    mulekites_discover_coriantumr.
+    mulekites_discover_coriantumr;
+    ammon_leaves_zarahemla;
+    ammon_arrives_in_lehi_nephi.
 
 % possible details about an event
 :- type detail --->
@@ -618,4 +620,28 @@ event( mulekites_discover_coriantumr, [
     what("People of Zarahemla discover Coriantumr"),
     citation(verse(omni,1,21))
 ]).
-% TODO continue. starting with the Words of Mormon
+
+and_then( mosiah_arrives_in_zarahemla, ammon_leaves_zarahemla, [
+    % citation: most of the Book of Mosiah
+]).
+event( ammon_leaves_zarahemla, [
+    what("Ammon departs Zarahemla"),
+    where(zarahemla),
+    time(circa(121,bc)),
+    citation(verses(mosiah,7,2,3))
+]).
+
+and_then( ammon_leaves_zarahemla, ammon_arrives_in_lehi_nephi, [
+    citation(verses(mosiah,7,4,5))
+]).
+and_then( mosiah_leaves_land_of_nephi, ammon_arrives_in_lehi_nephi, [
+    % citation: not sure a single passage can be cited for this
+]).
+event( ammon_arrives_in_lehi_nephi, [
+    what("Ammon arrives in Lehi-Nephi"),
+    where(lehi_nephi),
+    time(circa(121,bc)),
+    citation(verse(mosiah,7,6))
+]).
+
+% TODO continue. starting with Mosiah 9
