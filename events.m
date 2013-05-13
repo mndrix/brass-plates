@@ -39,7 +39,9 @@
     mulekites_found_zarahemla;
     mulekites_discover_coriantumr;
     ammon_leaves_zarahemla;
-    ammon_arrives_in_lehi_nephi.
+    ammon_arrives_in_lehi_nephi;
+    zeniff_leaves_zarahemla;
+    zeniff_arrives_in_lehi_nephi.
 
 % possible details about an event
 :- type detail --->
@@ -621,7 +623,7 @@ event( mulekites_discover_coriantumr, [
     citation(verse(omni,1,21))
 ]).
 
-and_then( mosiah_arrives_in_zarahemla, ammon_leaves_zarahemla, [
+and_then( zeniff_leaves_zarahemla, ammon_leaves_zarahemla, [
     % citation: most of the Book of Mosiah
 ]).
 event( ammon_leaves_zarahemla, [
@@ -634,7 +636,7 @@ event( ammon_leaves_zarahemla, [
 and_then( ammon_leaves_zarahemla, ammon_arrives_in_lehi_nephi, [
     citation(verses(mosiah,7,4,5))
 ]).
-and_then( mosiah_leaves_land_of_nephi, ammon_arrives_in_lehi_nephi, [
+and_then( zeniff_arrives_in_lehi_nephi, ammon_arrives_in_lehi_nephi, [
     % citation: not sure a single passage can be cited for this
 ]).
 event( ammon_arrives_in_lehi_nephi, [
@@ -644,4 +646,23 @@ event( ammon_arrives_in_lehi_nephi, [
     citation(verse(mosiah,7,6))
 ]).
 
-% TODO continue. starting with Mosiah 9
+and_then( mosiah_arrives_in_zarahemla, zeniff_leaves_zarahemla, [
+]).
+event( zeniff_leaves_zarahemla, [
+    what("Zeniff, et al depart Zarahemla"),
+    where(zarahemla),
+    time(circa(200,bc)),
+    citation(verse(mosiah,9,3))
+]).
+
+and_then( zeniff_leaves_zarahemla, zeniff_arrives_in_lehi_nephi, [
+    citation(verse(mosiah,9,4))
+]).
+and_then( mosiah_leaves_land_of_nephi, zeniff_arrives_in_lehi_nephi, []).
+event( zeniff_arrives_in_lehi_nephi, [
+    what("Zeniff, et al arrives in Lehi-Nephi"),
+    where(lehi_nephi),
+    time(circa(200,bc)),
+    citation(verses(mosiah,9,5,7))
+]).
+% TODO continue. starting with Mosiah 10
