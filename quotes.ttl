@@ -302,6 +302,12 @@
         sc:en.ether.12.11;
     bp:text "gift ... a more excellent way".
 
+[]
+    bp:quoted_in
+        sc:en.isa.52.7-10,
+        sc:en.mosiah.12.21-24;
+    bp:text "How beautiful upon the mountains ... salvation of our God".
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
