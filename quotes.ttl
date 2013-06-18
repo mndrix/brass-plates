@@ -308,6 +308,11 @@
         sc:en.mosiah.12.21-24;
     bp:text "How beautiful upon the mountains ... salvation of our God".
 
+[] bp:quoted_in
+        sc:en.mosiah.13.12-24,
+        sc:en.exodus.20.4-17;
+    bp:text "Thou shalt not make unto thee any graven image ... neighbour's".
+
 # this one is questionable.  the commonality between the verses is probably
 # better understood by the common practice of cultivating domestic olive trees
 # rather than a common textual history.  nevertheless, it might prove
