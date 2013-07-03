@@ -29,6 +29,7 @@
     lehi_sets_sail;
     arrive_in_promised_land;
     lehi_dies;
+    limhi_arrives_in_zarahemla;
     nephi_leaves_laman;
     city_of_nephi_founded;
     first_lamanite_nephite_wars;
@@ -665,4 +666,13 @@ event( zeniff_arrives_in_lehi_nephi, [
     time(circa(200,bc)),
     citation(verses(mosiah,9,5,7))
 ]).
-% TODO continue. starting with Mosiah 10
+
+and_then( ammon_leaves_zarahemla, limhi_arrives_in_zarahemla, []).
+and_then( ammon_arrives_in_lehi_nephi, limhi_arrives_in_zarahemla, []).
+event( limhi_arrives_in_zarahemla, [
+    what("Limhi and his people arrive in Zarahemla"),
+    where(zarahemla),
+    citation(verse(mosiah,22,13))
+]).
+
+% TODO continue. starting with Mosiah 24
