@@ -7,42 +7,42 @@
 
 % unique identifiers for each event
 :- type event_id --->
-    jerusalem_before_it_all;
-    lehi_leaves_jerusalem;
-    brothers_return_to_jerusalem;
+    ammon_arrives_in_lehi_nephi;
+    ammon_leaves_zarahemla;
+    arrive_in_promised_land;
     brothers_cast_lots;
-    laman_returns_to_brothers;
-    nephi_creeps_into_jerusalem;
-    nephi_visits_labans_treasury;
-    nephi_returns_to_brothers;
+    brothers_return_to_jerusalem;
     brothers_return_to_valley_of_lemuel;
     brothers_send_for_ishmael;
-    ishmael_departs_jerusalem;
-    ishmael_arrives_in_valley_of_lemuel;
-    lehi_finds_liahona;
-    pitch_tents_in_shazer;
-    pitched_tents_for_a_time;
-    lehi_resumes_journey;
-    lehi_arrives_in_nahom;
-    lehi_travels_eastward;
-    lehi_arrives_in_bountiful;
-    lehi_sets_sail;
-    arrive_in_promised_land;
-    lehi_dies;
-    limhi_arrives_in_zarahemla;
-    nephi_leaves_laman;
     city_of_nephi_founded;
     first_lamanite_nephite_wars;
-    mosiah_leaves_land_of_nephi;
+    ishmael_arrives_in_valley_of_lemuel;
+    ishmael_departs_jerusalem;
+    jerusalem_before_it_all;
+    laman_returns_to_brothers;
+    lehi_arrives_in_bountiful;
+    lehi_arrives_in_nahom;
+    lehi_dies;
+    lehi_finds_liahona;
+    lehi_leaves_jerusalem;
+    lehi_resumes_journey;
+    lehi_sets_sail;
+    lehi_travels_eastward;
+    limhi_arrives_in_zarahemla;
     mosiah_arrives_in_zarahemla;
-    siege_of_jerusalem;
+    mosiah_leaves_land_of_nephi;
     mulekites_depart_jerusalem;
-    mulekites_found_zarahemla;
     mulekites_discover_coriantumr;
-    ammon_leaves_zarahemla;
-    ammon_arrives_in_lehi_nephi;
-    zeniff_leaves_zarahemla;
-    zeniff_arrives_in_lehi_nephi.
+    mulekites_found_zarahemla;
+    nephi_creeps_into_jerusalem;
+    nephi_leaves_laman;
+    nephi_returns_to_brothers;
+    nephi_visits_labans_treasury;
+    pitch_tents_in_shazer;
+    pitched_tents_for_a_time;
+    siege_of_jerusalem;
+    zeniff_arrives_in_lehi_nephi;
+    zeniff_leaves_zarahemla.
 
 % possible details about an event
 :- type detail --->
