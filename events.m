@@ -7,6 +7,8 @@
 
 % unique identifiers for each event
 :- type event_id --->
+    alma_flees_lehi_nephi;
+    almas_people_arrive_in_zarahemla;
     ammon_arrives_in_lehi_nephi;
     ammon_leaves_zarahemla;
     arrive_in_promised_land;
@@ -637,7 +639,7 @@ event( ammon_leaves_zarahemla, [
 and_then( ammon_leaves_zarahemla, ammon_arrives_in_lehi_nephi, [
     citation(verses(mosiah,7,4,5))
 ]).
-and_then( zeniff_arrives_in_lehi_nephi, ammon_arrives_in_lehi_nephi, [
+and_then( alma_flees_lehi_nephi, ammon_arrives_in_lehi_nephi, [
     % citation: not sure a single passage can be cited for this
 ]).
 event( ammon_arrives_in_lehi_nephi, [
@@ -667,10 +669,24 @@ event( zeniff_arrives_in_lehi_nephi, [
     citation(verses(mosiah,9,5,7))
 ]).
 
+and_then( zeniff_arrives_in_lehi_nephi, alma_flees_lehi_nephi, []).
+event( alma_flees_lehi_nephi, [
+    what("Alma flees Lehi-Nephi"),
+    where(lehi_nephi)
+]).
+
 and_then( ammon_leaves_zarahemla, limhi_arrives_in_zarahemla, []).
 and_then( ammon_arrives_in_lehi_nephi, limhi_arrives_in_zarahemla, []).
 event( limhi_arrives_in_zarahemla, [
     what("Limhi and his people arrive in Zarahemla"),
     where(zarahemla),
     citation(verse(mosiah,22,13))
+]).
+
+and_then( limhi_arrives_in_zarahemla, almas_people_arrive_in_zarahemla, []).
+and_then( alma_flees_lehi_nephi, almas_people_arrive_in_zarahemla, []).
+event( almas_people_arrive_in_zarahemla, [
+    what("Alma's people arrive in Zarahemla"),
+    where(zarahemla),
+    citation(verse(mosiah,24,25))
 ]).
