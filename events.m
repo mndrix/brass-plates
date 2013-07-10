@@ -674,5 +674,3 @@ event( limhi_arrives_in_zarahemla, [
     where(zarahemla),
     citation(verse(mosiah,22,13))
 ]).
-
-% TODO continue. starting with Mosiah 24
