@@ -341,3 +341,11 @@
 # the language of this passage suggests that it is a quote but I haven't
 # yet found what it refers to.
 # 3 Nephi 27:5-6
+
+[]
+    bp:quoted_in
+        sc:en.ether.12.4,
+        sc:en.hebrews.6.19;
+    bp:description
+        "hope ... an anchor ... soul ... sure and steadfast"
+.
