@@ -250,6 +250,13 @@
 
 []
     bp:quoted_in
+        sc:en.1_ne.17.36,
+        sc:en.isa.45.18;
+    bp:text
+        "formed it to be inhabited".
+
+[]
+    bp:quoted_in
         sc:en.1_ne.17.45,
         sc:en.moroni.9.20,
         sc:en.eph.4.19;
